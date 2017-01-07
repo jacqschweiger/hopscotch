@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7140F0831E2130960079FD5C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140F0821E2130960079FD5C /* CollectionViewCell.swift */; };
 		7149562A1E2087AF0085EF34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714956291E2087AF0085EF34 /* Constants.swift */; };
 		71B075041E206F4500F192A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075031E206F4500F192A5 /* AppDelegate.swift */; };
-		71B075061E206F4500F192A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075051E206F4500F192A5 /* ViewController.swift */; };
+		71B075061E206F4500F192A5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075051E206F4500F192A5 /* CollectionViewController.swift */; };
 		71B075091E206F4500F192A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B075071E206F4500F192A5 /* Main.storyboard */; };
 		71B0750C1E206F4500F192A5 /* hopscotchProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71B0750A1E206F4500F192A5 /* hopscotchProject.xcdatamodeld */; };
 		71B0750E1E206F4500F192A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B0750D1E206F4500F192A5 /* Assets.xcassets */; };
@@ -20,10 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7140F0821E2130960079FD5C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		714956291E2087AF0085EF34 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71B075001E206F4500F192A5 /* hopscotchProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopscotchProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B075031E206F4500F192A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71B075051E206F4500F192A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71B075051E206F4500F192A5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		71B075081E206F4500F192A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71B0750B1E206F4500F192A5 /* hopscotchProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hopscotchProject.xcdatamodel; sourceTree = "<group>"; };
 		71B0750D1E206F4500F192A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,8 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				71B075031E206F4500F192A5 /* AppDelegate.swift */,
-				71B075051E206F4500F192A5 /* ViewController.swift */,
 				714956291E2087AF0085EF34 /* Constants.swift */,
+				71B075051E206F4500F192A5 /* CollectionViewController.swift */,
+				7140F0821E2130960079FD5C /* CollectionViewCell.swift */,
 				71B075181E206FC600F192A5 /* APIClient.swift */,
 				71B0751A1E206FD300F192A5 /* DataStore.swift */,
 				71B0751C1E206FDE00F192A5 /* Project.swift */,
@@ -151,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B075061E206F4500F192A5 /* ViewController.swift in Sources */,
+				71B075061E206F4500F192A5 /* CollectionViewController.swift in Sources */,
 				71B075041E206F4500F192A5 /* AppDelegate.swift in Sources */,
+				7140F0831E2130960079FD5C /* CollectionViewCell.swift in Sources */,
 				71B0750C1E206F4500F192A5 /* hopscotchProject.xcdatamodeld in Sources */,
 				71B0751B1E206FD300F192A5 /* DataStore.swift in Sources */,
 				7149562A1E2087AF0085EF34 /* Constants.swift in Sources */,

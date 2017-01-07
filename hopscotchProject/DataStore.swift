@@ -26,7 +26,9 @@ class DataStore {
                 self.projects.append(newProject)
                 print(newProject.title)
             }
+            
         completion()
+            
         }
     }
     
