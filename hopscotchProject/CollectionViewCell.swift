@@ -31,16 +31,30 @@ class CollectionViewCell: UICollectionViewCell {
     
     private func commonInit() {
         
+        //CELL SET UP
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.heightAnchor.constraint(equalToConstant: Constants.cardSizes.HSCardHeight.rawValue).isActive = true
+        contentView.widthAnchor.constraint(equalToConstant: Constants.cardSizes.HSCardWidth.rawValue).isActive = true
+        
+        
         //IMAGE SET UP
         imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         self.contentView.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        
+        imageView.widthAnchor.constraint(equalToConstant: Constants.image.HSImageWidth.rawValue).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: Constants.image.HSImageHeight.rawValue).isActive = true
+        
+        imageView.layer.cornerRadius = Constants.image.HSImageCornerRadius.rawValue
+        imageView.clipsToBounds = true
+        
+        
+//        imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+//        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
+//        imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
+//        imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
         
         
         //TITLE SET UP
