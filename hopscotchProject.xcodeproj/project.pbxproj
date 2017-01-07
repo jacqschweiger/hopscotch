@@ -18,9 +18,11 @@
 		71B075191E206FC600F192A5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075181E206FC600F192A5 /* APIClient.swift */; };
 		71B0751B1E206FD300F192A5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0751A1E206FD300F192A5 /* DataStore.swift */; };
 		71B0751D1E206FDE00F192A5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0751C1E206FDE00F192A5 /* Project.swift */; };
+		8A7C68411F819730D34855C8 /* Pods_hopscotchProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hopscotchProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7140F0821E2130960079FD5C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		714956291E2087AF0085EF34 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71B075001E206F4500F192A5 /* hopscotchProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopscotchProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +36,8 @@
 		71B075181E206FC600F192A5 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		71B0751A1E206FD300F192A5 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		71B0751C1E206FDE00F192A5 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B4B110770A770FA84CE8775A /* Pods-hopscotchProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B5AD9CD1A5048C96F637B85A /* Pods-hopscotchProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7C68411F819730D34855C8 /* Pods_hopscotchProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0337E03A84C65F038513FF2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4B110770A770FA84CE8775A /* Pods-hopscotchProject.debug.xcconfig */,
+				B5AD9CD1A5048C96F637B85A /* Pods-hopscotchProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		71B074F71E206F4500F192A5 = {
 			isa = PBXGroup;
 			children = (
 				71B075021E206F4500F192A5 /* hopscotchProject */,
 				71B075011E206F4500F192A5 /* Products */,
+				0337E03A84C65F038513FF2D /* Pods */,
+				E7FC8DE596B11F3E8E677517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +98,14 @@
 			path = hopscotchProject;
 			sourceTree = "<group>";
 		};
+		E7FC8DE596B11F3E8E677517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71B075151E206F4500F192A5 /* Build configuration list for PBXNativeTarget "hopscotchProject" */;
 			buildPhases = (
+				856C002924E18389C3A10660 /* [CP] Check Pods Manifest.lock */,
 				71B074FC1E206F4500F192A5 /* Sources */,
 				71B074FD1E206F4500F192A5 /* Frameworks */,
 				71B074FE1E206F4500F192A5 /* Resources */,
+				327B63B601DC9229843CF1E0 /* [CP] Embed Pods Frameworks */,
+				CCCF53BE22465E2E4789B46D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		327B63B601DC9229843CF1E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856C002924E18389C3A10660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCF53BE22465E2E4789B46D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71B074FC1E206F4500F192A5 /* Sources */ = {
@@ -282,6 +357,7 @@
 		};
 		71B075161E206F4500F192A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B110770A770FA84CE8775A /* Pods-hopscotchProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hopscotchProject/Info.plist;
@@ -294,6 +370,7 @@
 		};
 		71B075171E206F4500F192A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AD9CD1A5048C96F637B85A /* Pods-hopscotchProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = hopscotchProject/Info.plist;
