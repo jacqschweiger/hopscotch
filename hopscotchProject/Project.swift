@@ -7,17 +7,20 @@
 //
 
 import Foundation
+import UIKit
 
 
 class Project {
     
     var heartsCount: Int
     var title: String
+    var imageURL: String
 
     
     init(dictionary: [String: Any]) {
         self.heartsCount = dictionary["hearts_count"] as! Int
         self.title = dictionary["title"] as! String
+        self.imageURL = dictionary["screenshot_url"] as! String
     }
     
     

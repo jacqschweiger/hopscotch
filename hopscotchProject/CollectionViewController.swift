@@ -29,8 +29,13 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath) as! CollectionViewCell
-        cell.backgroundColor = UIColor.blue
-        print("hearts count: \(store.projects[indexPath.row].heartsCount)")
+        
+        if let url = URL(string: store.projects[indexPath.item].imageURL) {
+            if let data = NSData(contentsOf: url) {
+                cell.imageView.image = UIImage(data: data as Data)
+            }
+        }
+        
         //cell.imageView.image = store.projects[indexPath.row].heartsCount
         
         return cell
