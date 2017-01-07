@@ -36,8 +36,6 @@ class CollectionViewController: UICollectionViewController {
             }
         }
         
-        //cell.imageView.image = store.projects[indexPath.row].heartsCount
-        
         return cell
 
     }
