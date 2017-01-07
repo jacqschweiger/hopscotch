@@ -18,18 +18,18 @@ class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        commonInit()
+        setUpElements()
         
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        commonInit()
+        setUpElements()
         
     }
     
-    private func commonInit() {
+    private func setUpElements() {
         
         //CELL SET UP
         contentView.translatesAutoresizingMaskIntoConstraints = false
