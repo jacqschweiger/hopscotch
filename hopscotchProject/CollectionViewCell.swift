@@ -48,6 +48,8 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.heightAnchor.constraint(equalToConstant: Constants.image.HSImageHeight.rawValue).isActive = true
         
         imageView.layer.cornerRadius = Constants.image.HSImageCornerRadius.rawValue
+        imageView.layer.borderWidth = Constants.image.HSImageBorderWidth.rawValue
+        imageView.layer.borderColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.imageBorderColor.rawValue)!).cgColor
         imageView.clipsToBounds = true
         
         
