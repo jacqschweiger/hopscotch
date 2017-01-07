@@ -43,30 +43,28 @@ struct Constants {
         case HSImageCornerRadius = 10
         case HSImageBorderWidth = 2
     }
-    
 }
 
 
 //COLOR
 
 extension UIColor {
-    
-    class func titleColor() -> UIColor {
-        return self.colorWithGrayScale(grayScale: 77)
+    enum ColorName: UInt32 {
+        case titleColor = 0x4d4d4dff
+        case authorColor = 0x9b9b9bff
+        case imageBorderColor = 0xe4e4e4ff
     }
-    
-    class func authorColor() -> UIColor {
-        return self.colorWithGrayScale(grayScale: 155)
+}
+
+extension UIColor {
+    convenience init(named name: ColorName) {
+        let rgbaValue = name.rawValue
+        let red   = CGFloat((rgbaValue >> 24) & 0xff) / 255.0
+        let green = CGFloat((rgbaValue >> 16) & 0xff) / 255.0
+        let blue  = CGFloat((rgbaValue >>  8) & 0xff) / 255.0
+        let alpha = CGFloat((rgbaValue      ) & 0xff) / 255.0
+        
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
-    
-    class func imageBorderColor() -> UIColor {
-        return self.colorWithGrayScale(grayScale: 228)
-    }
-    
-    class func colorWithGrayScale(grayScale: CGFloat) -> UIColor {
-        //let newGrayScale = grayScale/255.0
-        return UIColor(red: grayScale, green: grayScale, blue: grayScale, alpha: 1)
-    }
-    
 }
  

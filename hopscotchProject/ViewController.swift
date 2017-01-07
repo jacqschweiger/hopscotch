@@ -32,6 +32,7 @@ class TableViewController: UITableViewController {
         
         cell.textLabel?.text = store.projects[indexPath.row].title
         cell.textLabel?.font = UIFont(name: Constants.font.titleFont.rawValue, size: CGFloat(Constants.fontSize.fontSize.rawValue))!
+        cell.backgroundColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.imageBorderColor.rawValue)!)
         return cell
         
     }
