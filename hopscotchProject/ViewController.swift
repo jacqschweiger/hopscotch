@@ -31,6 +31,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
         
         cell.textLabel?.text = store.projects[indexPath.row].title
+        cell.textLabel?.font = UIFont(name: Constants.font.titleFont.rawValue, size: CGFloat(Constants.fontSize.fontSize.rawValue))!
         return cell
         
     }

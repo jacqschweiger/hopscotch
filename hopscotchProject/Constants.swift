@@ -51,21 +51,22 @@ struct Constants {
 
 extension UIColor {
     
-    class func title() -> UIColor {
-        return self.withGrayScale(77)
+    class func titleColor() -> UIColor {
+        return self.colorWithGrayScale(grayScale: 77)
     }
     
-    class func author() -> UIColor {
-        return self.withGrayScale(155)
+    class func authorColor() -> UIColor {
+        return self.colorWithGrayScale(grayScale: 155)
     }
     
-    class func imageBorder() -> UIColor {
-        return self.withGrayScale(228)
+    class func imageBorderColor() -> UIColor {
+        return self.colorWithGrayScale(grayScale: 228)
     }
     
-    convenience init(grayScale: CGFloat) {
-        grayScale = grayScale / 255.0
-        return UIColor(red: grayScale, green: grayScale, blue: grayScale, alpha: CGFloat(1))
+    class func colorWithGrayScale(grayScale: CGFloat) -> UIColor {
+        //let newGrayScale = grayScale/255.0
+        return UIColor(red: grayScale, green: grayScale, blue: grayScale, alpha: 1)
     }
+    
 }
  
