@@ -18,7 +18,7 @@ class CollectionViewController: UICollectionViewController {
         
         self.store.getProjectsFromAPI {
             DispatchQueue.main.async {
-                self.reloadInputViews()
+               self.collectionView?.reloadData()
             }
         }
     }
@@ -29,6 +29,7 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath) as! CollectionViewCell
+        cell.backgroundColor = UIColor.blue
         print("hearts count: \(store.projects[indexPath.row].heartsCount)")
         //cell.imageView.image = store.projects[indexPath.row].heartsCount
         
