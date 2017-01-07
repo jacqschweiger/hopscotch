@@ -34,15 +34,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         cell.titleLabel.text = store.projects[indexPath.item].title
         cell.authorLabel.text = "by \(store.projects[indexPath.item].author)"
         
-//        if let url = URL(string: store.projects[indexPath.item].imageURL) {
-//            if let data = NSData(contentsOf: url) {
-//                cell.imageView.image = UIImage(data: data as Data)
-//            }
-//        }
-        
         if let url = URL(string: store.projects[indexPath.item].imageURL) {
             cell.imageView.sd_setImage(with: url)
-            }
+        }
         
         return cell
 
