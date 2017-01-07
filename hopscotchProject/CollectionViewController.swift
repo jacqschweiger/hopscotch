@@ -69,7 +69,3 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 }
 
-
-
-//UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.imageBorderColor.rawValue)!)
-

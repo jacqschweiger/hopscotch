@@ -31,8 +31,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     private func setUpElements() {
         
-        contentView.backgroundColor = UIColor.gray
-        
         //IMAGE SET UP
         imageView = UIImageView()
         imageView.contentMode = .scaleToFill
@@ -62,9 +60,10 @@ class CollectionViewCell: UICollectionViewCell {
         titleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-//        titleLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
         
         titleLabel.font = UIFont(name: Constants.font.titleFont.rawValue, size: CGFloat(Constants.fontSize.fontSize.rawValue))!
+        
+        titleLabel.textColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.titleColor.rawValue)!)
         
         
         //AUTHOR SET UP
@@ -75,7 +74,10 @@ class CollectionViewCell: UICollectionViewCell {
         authorLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor).isActive = true
         authorLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
         authorLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-        authorLabel.bottomAnchor.constraint(equalTo: self.imageView.topAnchor).isActive = true
+        authorLabel.bottomAnchor.constraint(equalTo: self.imageView.topAnchor, constant: -2).isActive = true
+        
+        authorLabel.font = UIFont(name: Constants.font.authorFont.rawValue, size: CGFloat(Constants.fontSize.fontSize.rawValue))!
+        authorLabel.textColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.authorColor.rawValue)!)
         
     }
     
