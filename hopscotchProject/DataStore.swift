@@ -16,7 +16,6 @@ class DataStore {
     
     var projects: [Project]!
     
-    
     func getProjectsFromAPI(completion: @escaping ()->()) {
         
         projects = []
