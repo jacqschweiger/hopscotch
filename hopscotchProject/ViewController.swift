@@ -8,23 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableViewController: UITableViewController {
     
     var store = DataStore.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("loading!")
-        
-        store.getProjectsFromAPI {
-            print("calling api")
+        self.store.getProjectsFromAPI {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return store.projects.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "basicCell", for: indexPath)
+        
+        cell.textLabel?.text = store.projects[indexPath.row].title
+        return cell
+        
     }
 
 

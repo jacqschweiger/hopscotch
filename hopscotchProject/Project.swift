@@ -11,11 +11,12 @@ import Foundation
 
 class Project {
     
-    var id: Int
+    var heartsCount: Int
     var title: String
+
     
-    init(dictionary: [String: Any]){
-        self.id = dictionary["id"] as! Int
+    init(dictionary: [String: Any]) {
+        self.heartsCount = dictionary["hearts_count"] as! Int
         self.title = dictionary["title"] as! String
     }
     
