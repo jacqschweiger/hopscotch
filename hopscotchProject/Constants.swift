@@ -46,7 +46,7 @@ struct Constants {
 }
 
 
-//COLOR
+    //COLOR
 
 extension UIColor {
     enum ColorName: UInt32 {

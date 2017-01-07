@@ -37,20 +37,17 @@ class CollectionViewCell: UICollectionViewCell {
         self.contentView.addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         imageView.widthAnchor.constraint(equalToConstant: Constants.image.HSImageWidth.rawValue).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: Constants.image.HSImageHeight.rawValue).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
         
         imageView.layer.cornerRadius = Constants.image.HSImageCornerRadius.rawValue
         imageView.layer.borderWidth = Constants.image.HSImageBorderWidth.rawValue
         imageView.layer.borderColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.imageBorderColor.rawValue)!).cgColor
         imageView.clipsToBounds = true
-        
-        
-        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
-        
+    
         
         //TITLE SET UP
         titleLabel = UILabel()
@@ -62,7 +59,6 @@ class CollectionViewCell: UICollectionViewCell {
         titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         
         titleLabel.font = UIFont(name: Constants.font.titleFont.rawValue, size: CGFloat(Constants.fontSize.fontSize.rawValue))!
-        
         titleLabel.textColor = UIColor(named: UIColor.ColorName(rawValue: UIColor.ColorName.titleColor.rawValue)!)
         
         
