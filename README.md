@@ -16,6 +16,7 @@ Jacqueline Schweiger Assumptions:
 - Written in Swift
 - PDF shows iPad Pro (9.7 in) in horizontal view
 - Scrolls vertically
-- Objects instantiated with screenshot, author, and title properties. 
+- Objects instantiated with screenshot, author, and title properties
 - Asynchronous loading of data and images with SDWebImage pod
-- Programmatic UI
+- Assume JSON data returns as [[String: Any]] and screenshot, author, and title values as type String
+- 
