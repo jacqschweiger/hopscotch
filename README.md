@@ -16,6 +16,6 @@ Jacqueline Schweiger Assumptions:
 - Written in Swift
 - PDF shows iPad Pro (9.7 in) in horizontal view
 - Scrolls vertically
-- Objects instantiated with screenshot, author, and title properties. Project object can be adjusted to include additinal properties if needed.
+- Objects instantiated with screenshot, author, and title properties. 
 - Asynchronous loading of data and images with SDWebImage pod
 - Programmatic UI

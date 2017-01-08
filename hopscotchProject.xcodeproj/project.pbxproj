@@ -82,14 +82,14 @@
 		71B075021E206F4500F192A5 /* hopscotchProject */ = {
 			isa = PBXGroup;
 			children = (
-				71B075031E206F4500F192A5 /* AppDelegate.swift */,
-				71B075051E206F4500F192A5 /* CollectionViewController.swift */,
-				7140F0821E2130960079FD5C /* CollectionViewCell.swift */,
 				71B075181E206FC600F192A5 /* APIClient.swift */,
 				71B0751A1E206FD300F192A5 /* DataStore.swift */,
 				71B0751C1E206FDE00F192A5 /* Project.swift */,
-				71B075071E206F4500F192A5 /* Main.storyboard */,
+				71B075051E206F4500F192A5 /* CollectionViewController.swift */,
+				7140F0821E2130960079FD5C /* CollectionViewCell.swift */,
 				714956291E2087AF0085EF34 /* Constants.swift */,
+				71B075031E206F4500F192A5 /* AppDelegate.swift */,
+				71B075071E206F4500F192A5 /* Main.storyboard */,
 				71B0750D1E206F4500F192A5 /* Assets.xcassets */,
 				71B0750F1E206F4500F192A5 /* LaunchScreen.storyboard */,
 				71B075121E206F4500F192A5 /* Info.plist */,
