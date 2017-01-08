@@ -13,13 +13,13 @@ import SDWebImage
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var store = DataStore.sharedInstance
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.store.getProjectsFromAPI {
             DispatchQueue.main.async {
-               self.collectionView?.reloadData()
+                self.collectionView?.reloadData()
             }
         }
     }
@@ -39,7 +39,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         }
         
         return cell
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -62,9 +62,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let cardWidth = Constants.cardSizes.HSCardWidth.rawValue
         let cardHeight = Constants.cardSizes.HSCardHeight.rawValue
         let cardSize = CGSize(width: cardWidth, height: cardHeight)
-
+        
         return cardSize
     }
-
+    
 }
 
