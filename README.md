@@ -18,5 +18,5 @@ Jacqueline Schweiger Assumptions:
 - Scrolls vertically
 - Objects instantiated with screenshot, author, and title properties
 - Asynchronous loading of data and images with SDWebImage pod
-- Assume JSON data returns as [[String: Any]] and screenshot, author, and title values as type String
+- Assume JSON data returns as [[String: Any]], and screenshot, author, and title values are of type String
 - 
