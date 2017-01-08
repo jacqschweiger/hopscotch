@@ -10,3 +10,12 @@ The design for the feed is included in the file `Hopscotch-iOS-Test.pdf`. All th
 Bonus points for loading data and images asynchronously. 
 
 Please document any assumptions you make. 
+
+Jacqueline Schweiger Assumptions:
+
+- Written in Swift
+- PDF shows iPad Pro (9.7 in) in horizontal view
+- Scrolls vertically
+- Objects instantiated with screenshot, author, and title properties. Project object can be adjusted to include additinal properties if needed.
+- Asynchronous loading of data and images with SDWebImage pod
+- Programmatic UI
