@@ -6,7 +6,6 @@
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 
-import UIKit
 import XCTest
 @testable import hopscotchProject
 
@@ -20,8 +19,10 @@ class hopscotchProjectTests: XCTestCase {
     }
     
     func testProjectModel() {
-        //test init - right things and wrong thing make sure it breaks
-        
+        //Test failable initalizer
+        var dict = ["title":"test title"]
+        var project = Project(dictionary: dict)
+        XCTAssert(project == nil)
     }
     
     func testGetAllProjects() {
@@ -30,6 +31,13 @@ class hopscotchProjectTests: XCTestCase {
             
             // Test that there are projects
             XCTAssert(self.store.projects.count > 0)
+            
+            // Test that projects contain title, author, and image
+            for project in self.store.projects {
+                XCTAssert(!project.title.isEmpty)
+                XCTAssert(!project.author.isEmpty)
+                XCTAssert(!project.imageURL.isEmpty)
+            }
         }
     }
     

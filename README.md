@@ -13,10 +13,9 @@ Please document any assumptions you make.
 
 Jacqueline Schweiger Assumptions:
 
-- Written in Swift
 - PDF shows iPad Pro (9.7 in) in horizontal view
 - Scrolls vertically
-- Objects instantiated with screenshot, author, and title properties
-- Assume screenshot, author, and title values are of type String
+- Assume screenshot_url, author, title, created_at, and updated_at values will always be of type String; assume hearts_count and id values will always be of type Int
+- Assume Hopscotch logo used for placeholder screenshot_url image
 - Assume if any one of screenshot, author, or title values is missing from API results, do not display that associated Project object in the HopscotchCollectionView
-- Asynchronous loading of images with SDWebImage pod
+- Asynchronous loading of data and images; images loaded with SDWebImage pod
