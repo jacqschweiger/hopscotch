@@ -26,10 +26,7 @@ class HopscotchDataStore {
                     self.projects.append(newProject)
                 }
             }
-            
             completion()
-           let testProject = Project(title: "test", author: "test", imageURL: "http://cf.ltkcdn.net/dogs/images/slide/185065-849x565-beagle-puppy-on-the-beach.jpg")
-            self.projects.append(testProject)
         }
     }
 }
