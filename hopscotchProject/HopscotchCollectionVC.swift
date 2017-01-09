@@ -24,9 +24,6 @@ class HopscotchCollectionViewController: UICollectionViewController, UICollectio
             }
         }
     }
-    
-    
-    
 }
 
 //MARK:- CollectionView Delegate and DataSource

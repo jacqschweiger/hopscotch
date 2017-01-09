@@ -13,7 +13,7 @@ struct Constants {
     
     //HOPSCOTCH URL
     
-    let hopscotchURLString = "https://hopscotch-ios-test.herokuapp.com/projects"
+    static let hopscotchURLString = "https://hopscotch-ios-test.herokuapp.com/projects"
     
 
     //FONTS

@@ -24,7 +24,6 @@ class HopscotchDataStore {
                 if let newProject = Project(dictionary: project) {
                     self.projects.append(newProject)
                 }
-                
             }
             
             completion()

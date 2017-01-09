@@ -9,37 +9,29 @@
 import Foundation
 import UIKit
 
-// get a reason ? 
-// could also be a struct 
-
 class Project {
     
     var title: String
     var author: String
     var imageURL: String
 
-
-    //Use [String:Any] to allow for later additions of different property types
-    //MARK:- make an init with properties as a just in case
     
-    
+    init(title: String, author: String, imageURL: String){
+        self.title = title
+        self.author = author
+        self.imageURL = imageURL
+    }
     
     init?(dictionary: [String: Any]) {
-        
-        
-       guard let title = dictionary["title"] as? String, let author = dictionary["author"] as? String, let imageURL = dictionary["screenshot_url"] as? String else { return nil }
-//
-//        guard let title = dictionary["title"] as? String else { return }
-//        guard let author = dictionary["title"] as? String else { return }
-//        guard let imageURL = dictionary["title"] as? String else { return }
-        //MARK:- do the following for author
-        //let author = dictionary["author"] as? String ?? ""
+
+        guard let title = dictionary["title"] as? String else { return nil }
+        guard let author = dictionary["author"] as? String else { return nil }
+        guard let imageURL = dictionary["screenshot_url"] as? String else { return nil }
     
         self.title = title
+        self.author = author
+        self.imageURL = imageURL
         
-        self.title = dictionary["title"] as! String
-        self.author = dictionary["author"] as! String
-        self.imageURL = dictionary["screenshot_url"] as! String
     }
     
 }

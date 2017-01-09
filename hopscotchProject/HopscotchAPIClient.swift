@@ -11,11 +11,11 @@ import Foundation
 typealias JSON = [String:Any]
 
 class HopscotchAPIClient {
-    // Gets Projects from the Hopscotch API
+    // gets Projects from Hopscotch API
     
     class func getProjects(with completion: @escaping ([JSON])-> Void) {
         
-        guard let url = URL(string: "https://hopscotch-ios-test.herokuapp.com/projects") else { print("invalid url"); return }
+        guard let url = URL(string: Constants.hopscotchURLString) else { print("invalid url"); return }
         
         let session = URLSession.shared
         
