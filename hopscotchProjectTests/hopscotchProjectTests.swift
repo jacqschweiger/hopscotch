@@ -12,12 +12,11 @@ import XCTest
 
 class hopscotchProjectTests: XCTestCase {
     
-    var store: DataStore!
+    var store: HopscotchDataStore!
     
     override func setUp() {
         super.setUp()
-        store = DataStore.sharedInstance
-        
+        store = HopscotchDataStore.sharedInstance
     }
     
     func testProjectModel() {
@@ -27,7 +26,6 @@ class hopscotchProjectTests: XCTestCase {
     func testGetAllProjects() {
         store.projects = []
         store.getProjectsFromAPI {
-            
             
             // Test that there are projects
             XCTAssert(self.store.projects.count > 0)
