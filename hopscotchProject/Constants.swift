@@ -54,7 +54,7 @@ struct Constants {
     //COLOR
 
 extension UIColor {
-    enum ColorName: UInt32 {
+    enum ColorName: Int {
         case titleColor = 0x4d4d4dff
         case authorColor = 0x9b9b9bff
         case imageBorderColor = 0xe4e4e4ff
