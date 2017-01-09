@@ -17,6 +17,6 @@ Jacqueline Schweiger Assumptions:
 - PDF shows iPad Pro (9.7 in) in horizontal view
 - Scrolls vertically
 - Objects instantiated with screenshot, author, and title properties
-- Asynchronous loading of images with SDWebImage pod
 - Assume screenshot, author, and title values are of type String
-- 
+- Assume if any one of screenshot, author, or title values is missing from API results, do not display that associated Project object in the HopscotchCollectionView
+- Asynchronous loading of images with SDWebImage pod

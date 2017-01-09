@@ -9,6 +9,7 @@
 import Foundation
 
 class HopscotchDataStore {
+    //create single instance for use if hopscotchProject scaled up/expanded
     
     static let sharedInstance = HopscotchDataStore()
     private init() {}

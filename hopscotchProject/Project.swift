@@ -15,7 +15,6 @@ class Project {
     var author: String
     var imageURL: String
 
-    
     init(title: String, author: String, imageURL: String){
         self.title = title
         self.author = author

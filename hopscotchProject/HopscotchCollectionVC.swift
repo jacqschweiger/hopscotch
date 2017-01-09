@@ -44,10 +44,7 @@ extension HopscotchCollectionViewController {
         }
         
         return cell
-        
     }
-
-    
 }
 
 //MARK:- CollectionViewLayout
@@ -76,6 +73,4 @@ extension HopscotchCollectionViewController {
         
         return cardSize
     }
-
-    
 }
