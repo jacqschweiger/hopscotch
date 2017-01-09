@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  hopscotchProject
 //
-//  Created by Jacqueline Minneman on 1/6/17.
+//  Created by Jacqueline Schweiger on 1/6/17.
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 

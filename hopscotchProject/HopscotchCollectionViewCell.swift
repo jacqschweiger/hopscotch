@@ -1,15 +1,15 @@
 //
-//  CollectionViewCell.swift
+//  HopscotchCollectionViewCell.swift
 //  hopscotchProject
 //
-//  Created by Jacqueline Minneman on 1/7/17.
+//  Created by Jacqueline Schweiger on 1/7/17.
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class HopscotchCollectionViewCell: UICollectionViewCell {
     
     var imageView: UIImageView!
     var authorLabel: UILabel!

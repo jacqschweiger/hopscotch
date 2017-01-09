@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Hopscotch Collection View Controller-->
         <scene sceneID="W6j-HX-XHH">
             <objects>
-                <collectionViewController id="F6B-NR-VOZ" customClass="CollectionViewController" customModule="hopscotchProject" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="F6B-NR-VOZ" customClass="HopscotchCollectionViewController" customModule="hopscotchProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="fbd-HA-Vov">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="basicCell" id="tQV-FW-9Sg" customClass="CollectionViewCell" customModule="hopscotchProject" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="basicCell" id="tQV-FW-9Sg" customClass="HopscotchCollectionViewCell" customModule="hopscotchProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="276" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

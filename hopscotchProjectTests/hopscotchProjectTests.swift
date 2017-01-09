@@ -6,17 +6,37 @@
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 
+
 import XCTest
+@testable import hopscotchProject
 
 class hopscotchProjectTests: XCTestCase {
     
+    var store: DataStore!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        store = DataStore.sharedInstance
+        
+    }
+    
+    func testProjectModel() {
+        //test init - right things and wrong thing make sure it breaks
+    }
+    
+    func testGetAllProjects() {
+        store.projects = []
+        store.getProjectsFromAPI {
+            
+            
+            // Test that there are projects
+            XCTAssert(self.store.projects.count > 0)
+        }
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        store = nil
         super.tearDown()
     }
     
@@ -24,12 +44,6 @@ class hopscotchProjectTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+   
     
 }

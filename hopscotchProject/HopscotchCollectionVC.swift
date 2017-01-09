@@ -1,8 +1,8 @@
 //
-//  CollectionViewController.swift
+//  HopscotchCollectionViewController.swift
 //  hopscotchProject
 //
-//  Created by Jacqueline Minneman on 1/6/17.
+//  Created by Jacqueline Schweiger on 1/6/17.
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 
@@ -10,26 +10,34 @@ import Foundation
 import UIKit
 import SDWebImage
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class HopscotchCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    var store = DataStore.sharedInstance
+    var store = HopscotchDataStore.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.store.getProjectsFromAPI {
+            
             DispatchQueue.main.async {
                 self.collectionView?.reloadData()
             }
         }
     }
     
+    
+    
+}
+
+//MARK:- CollectionView Delegate and DataSource
+extension HopscotchCollectionViewController {
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return store.projects.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath) as! CollectionViewCell
+        let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath) as! HopscotchCollectionViewCell
         
         cell.titleLabel.text = store.projects[indexPath.item].title
         cell.authorLabel.text = "by \(store.projects[indexPath.item].author)"
@@ -41,6 +49,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return cell
         
     }
+
+    
+}
+
+//MARK:- CollectionViewLayout
+extension HopscotchCollectionViewController {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         let verticalSpacing = Constants.gridLayout.HSInterCardVerticalSpacing.rawValue
@@ -65,6 +79,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         return cardSize
     }
+
     
 }
-

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7140F0831E2130960079FD5C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140F0821E2130960079FD5C /* CollectionViewCell.swift */; };
+		490C6B1FB95ECC6EC6DB8688 /* libPods-hopscotchProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D7AB3B2FAF5E9BB936E0F7 /* libPods-hopscotchProjectTests.a */; };
+		7140F0831E2130960079FD5C /* HopscotchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140F0821E2130960079FD5C /* HopscotchCollectionViewCell.swift */; };
 		7149562A1E2087AF0085EF34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714956291E2087AF0085EF34 /* Constants.swift */; };
 		71B075041E206F4500F192A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075031E206F4500F192A5 /* AppDelegate.swift */; };
-		71B075061E206F4500F192A5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075051E206F4500F192A5 /* CollectionViewController.swift */; };
+		71B075061E206F4500F192A5 /* HopscotchCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075051E206F4500F192A5 /* HopscotchCollectionVC.swift */; };
 		71B075091E206F4500F192A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B075071E206F4500F192A5 /* Main.storyboard */; };
 		71B0750C1E206F4500F192A5 /* hopscotchProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71B0750A1E206F4500F192A5 /* hopscotchProject.xcdatamodeld */; };
 		71B0750E1E206F4500F192A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B0750D1E206F4500F192A5 /* Assets.xcassets */; };
 		71B075111E206F4500F192A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B0750F1E206F4500F192A5 /* LaunchScreen.storyboard */; };
-		71B075191E206FC600F192A5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075181E206FC600F192A5 /* APIClient.swift */; };
-		71B0751B1E206FD300F192A5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0751A1E206FD300F192A5 /* DataStore.swift */; };
+		71B075191E206FC600F192A5 /* HopscotchAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B075181E206FC600F192A5 /* HopscotchAPIClient.swift */; };
+		71B0751B1E206FD300F192A5 /* HopscotchDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0751A1E206FD300F192A5 /* HopscotchDataStore.swift */; };
 		71B0751D1E206FDE00F192A5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0751C1E206FDE00F192A5 /* Project.swift */; };
 		71D2F9981E22EEED00EE97DA /* hopscotchProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D2F9971E22EEED00EE97DA /* hopscotchProjectTests.swift */; };
 		8A7C68411F819730D34855C8 /* Pods_hopscotchProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */; };
@@ -34,22 +35,25 @@
 
 /* Begin PBXFileReference section */
 		6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hopscotchProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7140F0821E2130960079FD5C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7140F0821E2130960079FD5C /* HopscotchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopscotchCollectionViewCell.swift; sourceTree = "<group>"; };
 		714956291E2087AF0085EF34 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71B075001E206F4500F192A5 /* hopscotchProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopscotchProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B075031E206F4500F192A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71B075051E206F4500F192A5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		71B075051E206F4500F192A5 /* HopscotchCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopscotchCollectionVC.swift; sourceTree = "<group>"; };
 		71B075081E206F4500F192A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71B0750B1E206F4500F192A5 /* hopscotchProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hopscotchProject.xcdatamodel; sourceTree = "<group>"; };
 		71B0750D1E206F4500F192A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71B075101E206F4500F192A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71B075121E206F4500F192A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71B075181E206FC600F192A5 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		71B0751A1E206FD300F192A5 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		71B075181E206FC600F192A5 /* HopscotchAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopscotchAPIClient.swift; sourceTree = "<group>"; };
+		71B0751A1E206FD300F192A5 /* HopscotchDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopscotchDataStore.swift; sourceTree = "<group>"; };
 		71B0751C1E206FDE00F192A5 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		71D2F9951E22EEED00EE97DA /* hopscotchProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hopscotchProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D2F9971E22EEED00EE97DA /* hopscotchProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hopscotchProjectTests.swift; sourceTree = "<group>"; };
 		71D2F9991E22EEED00EE97DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D7AB3B2FAF5E9BB936E0F7 /* libPods-hopscotchProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hopscotchProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FDB3572665C8A62E7AEDB1 /* Pods-hopscotchProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProjectTests/Pods-hopscotchProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		A569C787EAE73F24698BEF82 /* Pods-hopscotchProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProjectTests/Pods-hopscotchProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B110770A770FA84CE8775A /* Pods-hopscotchProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B5AD9CD1A5048C96F637B85A /* Pods-hopscotchProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopscotchProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490C6B1FB95ECC6EC6DB8688 /* libPods-hopscotchProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				B4B110770A770FA84CE8775A /* Pods-hopscotchProject.debug.xcconfig */,
 				B5AD9CD1A5048C96F637B85A /* Pods-hopscotchProject.release.xcconfig */,
+				A569C787EAE73F24698BEF82 /* Pods-hopscotchProjectTests.debug.xcconfig */,
+				A4FDB3572665C8A62E7AEDB1 /* Pods-hopscotchProjectTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -105,11 +112,11 @@
 		71B075021E206F4500F192A5 /* hopscotchProject */ = {
 			isa = PBXGroup;
 			children = (
-				71B075181E206FC600F192A5 /* APIClient.swift */,
-				71B0751A1E206FD300F192A5 /* DataStore.swift */,
+				71B075181E206FC600F192A5 /* HopscotchAPIClient.swift */,
+				71B0751A1E206FD300F192A5 /* HopscotchDataStore.swift */,
 				71B0751C1E206FDE00F192A5 /* Project.swift */,
-				71B075051E206F4500F192A5 /* CollectionViewController.swift */,
-				7140F0821E2130960079FD5C /* CollectionViewCell.swift */,
+				71B075051E206F4500F192A5 /* HopscotchCollectionVC.swift */,
+				7140F0821E2130960079FD5C /* HopscotchCollectionViewCell.swift */,
 				714956291E2087AF0085EF34 /* Constants.swift */,
 				71B075031E206F4500F192A5 /* AppDelegate.swift */,
 				71B075071E206F4500F192A5 /* Main.storyboard */,
@@ -134,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				6810CED4B2D3593C3A8614D2 /* Pods_hopscotchProject.framework */,
+				96D7AB3B2FAF5E9BB936E0F7 /* libPods-hopscotchProjectTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71D2F99E1E22EEED00EE97DA /* Build configuration list for PBXNativeTarget "hopscotchProjectTests" */;
 			buildPhases = (
+				9D93C91539E49523BFE17C2C /* [CP] Check Pods Manifest.lock */,
 				71D2F9911E22EEED00EE97DA /* Sources */,
 				71D2F9921E22EEED00EE97DA /* Frameworks */,
 				71D2F9931E22EEED00EE97DA /* Resources */,
+				146CBC60A969BB7CADB865C5 /* [CP] Embed Pods Frameworks */,
+				3BB995500EEB778235174AB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +251,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		146CBC60A969BB7CADB865C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopscotchProjectTests/Pods-hopscotchProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		327B63B601DC9229843CF1E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,7 +281,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopscotchProject/Pods-hopscotchProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3BB995500EEB778235174AB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopscotchProjectTests/Pods-hopscotchProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		856C002924E18389C3A10660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D93C91539E49523BFE17C2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,13 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B075061E206F4500F192A5 /* CollectionViewController.swift in Sources */,
+				71B075061E206F4500F192A5 /* HopscotchCollectionVC.swift in Sources */,
 				71B075041E206F4500F192A5 /* AppDelegate.swift in Sources */,
-				7140F0831E2130960079FD5C /* CollectionViewCell.swift in Sources */,
+				7140F0831E2130960079FD5C /* HopscotchCollectionViewCell.swift in Sources */,
 				71B0750C1E206F4500F192A5 /* hopscotchProject.xcdatamodeld in Sources */,
-				71B0751B1E206FD300F192A5 /* DataStore.swift in Sources */,
+				71B0751B1E206FD300F192A5 /* HopscotchDataStore.swift in Sources */,
 				7149562A1E2087AF0085EF34 /* Constants.swift in Sources */,
-				71B075191E206FC600F192A5 /* APIClient.swift in Sources */,
+				71B075191E206FC600F192A5 /* HopscotchAPIClient.swift in Sources */,
 				71B0751D1E206FDE00F192A5 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +518,7 @@
 		};
 		71D2F99C1E22EEED00EE97DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A569C787EAE73F24698BEF82 /* Pods-hopscotchProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = hopscotchProjectTests/Info.plist;
@@ -475,6 +532,7 @@
 		};
 		71D2F99D1E22EEED00EE97DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FDB3572665C8A62E7AEDB1 /* Pods-hopscotchProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = hopscotchProjectTests/Info.plist;
@@ -514,6 +572,7 @@
 				71D2F99D1E22EEED00EE97DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
