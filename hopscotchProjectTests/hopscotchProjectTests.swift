@@ -20,8 +20,8 @@ class hopscotchProjectTests: XCTestCase {
     
     func testProjectModel() {
         //Test failable initalizer
-        var dict = ["title":"test title"]
-        var project = Project(dictionary: dict)
+        let dict = ["title":"test title"]
+        let project = Project(dictionary: dict)
         XCTAssert(project == nil)
     }
     

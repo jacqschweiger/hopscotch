@@ -29,29 +29,4 @@ class HopscotchDataStore {
             completion()
         }
     }
-    
-    //
-    func getProjectsByHearts(completion: @escaping ()->()) {
-        getAllProjects {
-            self.projects.sort { (projectA, projectB) -> Bool in
-                projectA.heartsCount > projectB.heartsCount
-            }
-            completion()
-        }
-    }
-    
-    private func getAllProjects(completion: @escaping () -> ()) {
-        projects = []
-        
-        HopscotchAPIClient.getProjects { (results) in
-            for project in results {
-                if let newProject = Project(dictionary: project) {
-                    self.projects.append(newProject)
-                }
-            }
-            completion()
-        }
-
-        
-    }
 }
