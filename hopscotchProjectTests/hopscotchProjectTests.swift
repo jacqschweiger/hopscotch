@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jacqueline Schweiger. All rights reserved.
 //
 
-
+import UIKit
 import XCTest
 @testable import hopscotchProject
 
@@ -21,6 +21,7 @@ class hopscotchProjectTests: XCTestCase {
     
     func testProjectModel() {
         //test init - right things and wrong thing make sure it breaks
+        
     }
     
     func testGetAllProjects() {
@@ -37,11 +38,4 @@ class hopscotchProjectTests: XCTestCase {
         store = nil
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-   
-    
 }
