@@ -1,7 +1,7 @@
-# Hopscotch iOS Test Project
+# iOS Test Project
 
 ## Instructions:
-In this project you will be creating a simplified version of the Hopscotch projects feed.This app should pull data from our server at `https://hopscotch-ios-test.herokuapp.com/projects` and display it in a view that scrolls.
+In this project you will be creating a simplified version of the projects feed. This app should pull data from our server and display it in a view that scrolls.
 
 We included Cocoapods in the project if you need to import and external libraries but this is not required. 
 
@@ -11,7 +11,7 @@ Bonus points for loading data and images asynchronously.
 
 Please document any assumptions you make. 
 
-Jacqueline Schweiger Assumptions:
+Assumptions:
 
 - PDF shows iPad Pro (9.7 in) in horizontal view
 - Scrolls vertically
