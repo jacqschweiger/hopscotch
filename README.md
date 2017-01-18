@@ -5,7 +5,7 @@ In this project you will be creating a simplified version of the projects feed. 
 
 We included Cocoapods in the project if you need to import and external libraries but this is not required. 
 
-The design for the feed is included in the file `Hopscotch-iOS-Test.pdf`. All the measurements/colors/fonts are included in the project folder entitled `UI Helpers`.
+The design for the feed is included in the file `iOS-Test.pdf`. All the measurements/colors/fonts are included in the project folder entitled `UI Helpers`.
 
 Bonus points for loading data and images asynchronously. 
 
